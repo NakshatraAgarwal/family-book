@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>
+     Family Book
+    </title>
+  </head>
+  <body>
+      <h1>Family Book</h1>
+    <img src="https://img2.pngio.com/father-png-clipart-arm-art-boy-cartoon-child-free-png-download-father-cartoon-png-728_796.jpg" id="image"><br>
+    <p id = "reason">Ravindra Kumar Agarwal</p><br>
+    <button id ="button"onclick="next()">
+      Next
+      
+    </button>
+  </body>
+  <script>
+var reasons=[
+"lalita Agarwal",
+"Nakshatra Agarwal",
+"Advika Agarwal",
+"Ravindra Kumar Agarwal"
+];
+var images=[
+"https://cdn3.iconfinder.com/data/icons/family-member-flat-happy-family-day/512/Mother-512.png",
+"https://toppng.com/uploads/preview/free-png-download-asian-child-pointing-png-images-background-kids-png-asia-11562935881bebub7t5ze.png",
+"https://png.pngtree.com/png-clipart/20190115/ourmid/pngtree-wenjing-girl-cute-girl-q-version-girl-cute-little-girl-png-image_336974.jpg",
+"https://img2.pngio.com/father-png-clipart-arm-art-boy-cartoon-child-free-png-download-father-cartoon-png-728_796.jpg",
+
+];
+var i=0;
+
+function next(){
+  document.getElementById("reason").innerHTML=reasons[i];
+  document.getElementById
+  ("image").src=images[i];
+  i++;
+  if(i==4){
+    i=0;
+  }
+}
+  </script>
+
+</html>
